@@ -21,12 +21,19 @@ namespace VendasMvc.Controllers
         public IActionResult Index()
         {
             return View();
+            /*Métodos que vão nos auxiliar a instancioar o objeto de resposta. 
+            ex: View, NotFound, Redirect (Usar o CRTL + espaço depois ir na opção métodos.)*/
         }
 
         public IActionResult Privacy()
         {
+            /*Passagem de dados entre o controlador e a View*/
+            ViewData["Message"] = "Aula de MVC";
+            ViewData["Professor"] = "juliano M. Lima";
+            ViewData["email"]   = "juliano.lima@docente.unip.br";
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

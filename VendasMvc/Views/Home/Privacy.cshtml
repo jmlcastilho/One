@@ -1,6 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
+    ViewData["Message"] = "By Juliano Lima";
+    /*Posso colocar o código C# aqui, pois as páginas Razor aceita esse tipo de código
+    contanto que eu use o @{
+    Usando as boas préticas já que não é tão indicado colocar nas views tanto código */
 }
 <h1>@ViewData["Title"]</h1>
-
+<h2>@ViewData["Message"]</h2>
 <p>Use this page to detail your site's privacy policy.</p>
+<p>Professor @ViewData["Professor"]</p>
+<p>@ViewData["email"]</p>
+<address>
+    <strong>Mais Informações: </strong> <a href="https://unip.br/">Universidade Paulista</a>
+</address>
