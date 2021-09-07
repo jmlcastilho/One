@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using VendasMvc.Models;
+using VendasMvc.Models.ViewModels;
 
 namespace VendasMvc.Controllers
 {
